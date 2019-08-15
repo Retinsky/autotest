@@ -1,0 +1,99 @@
+test1
+package SLAVA.S55;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class homework1 {
+	public static  WebDriver driver;
+	
+	@Test
+	
+	public void login() throws InterruptedException {
+	
+			 System.setProperty ("webdriver.chrome.driver", "F:\\test\\chromedriver.exe");	
+		 driver = new ChromeDriver();
+		    driver.manage().window().maximize();
+		    driver.get("http://users.bugred.ru/");
+driver.findElement(By.xpath("//span[contains(text(), 'Войти')]")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[2]/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ValeraIvanov");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[2]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("ValeraIvanov@gmail.com");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[2]/form/table/tbody/tr[3]/td[2]/input")).sendKeys("654321");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[2]/form/table/tbody/tr[4]/td[2]/input")).click();
+
+
+driver.quit();
+	}
+}
+
+
+test2
+package SLAVA.S55;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class homework2 {
+public static  WebDriver driver;
+	
+	@Test
+	
+	public void login() throws InterruptedException {
+	
+			 System.setProperty ("webdriver.chrome.driver", "F:\\test\\chromedriver.exe");	
+		 driver = new ChromeDriver();
+		    driver.manage().window().maximize();
+		    driver.get("http://users.bugred.ru/");
+driver.findElement(By.xpath("//span[contains(text(), 'Войти')]")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ValeraIvanov@gmail.com");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("654321");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[3]/td[2]/input")).click();
+
+driver.findElement(By.xpath("//*[@id=\"main-menu\"]/ul/li[2]/a/span")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/p[1]/a")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/table/tbody/tr[1]/td[2]/input")).sendKeys("new");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/table/tbody/tr[2]/td[2]/textarea")).sendKeys("write new post");
+driver.findElement((By.xpath("/html/body/div[3]/div[1]/form/table/tbody/tr[4]/td[2]/input"))).click();
+
+
+driver.quit();
+	}
+}
+
+
+test3
+package SLAVA.S55;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class homework3 {
+	
+public static  WebDriver driver;
+	
+	@Test
+	
+	public void login() throws InterruptedException {
+	
+			 System.setProperty ("webdriver.chrome.driver", "F:\\test\\chromedriver.exe");	
+		 driver = new ChromeDriver();
+		    driver.manage().window().maximize();
+		    driver.get("http://users.bugred.ru/");
+driver.findElement(By.xpath("//span[contains(text(), 'Войти')]")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ValeraIvanov@gmail.com");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("654321");
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[3]/td[2]/input")).click();
+
+driver.findElement(By.xpath("//*[@id=\"main-menu\"]/ul/li[2]/a/span")).click();
+driver.findElement(By.xpath("/html/body/div[3]/div[1]/table/tbody/tr/td[4]/a")).click();
+
+
+
+driver.quit();
+	}
+}
